@@ -1,0 +1,25 @@
+#conteudo{
+    background: #dcdcdc;
+    height: 600px;
+    display:flex;
+    /* ----VALORES DA PROPRIEDADE "FLEX-DIRECTION"----
+    row, row-reverse, column, column-reverse*/
+    flex-direction:row;
+
+    /* ----VALORES DA PROPRIEDADE "FLEX-WRAP"----
+    nowrap, wrap, wrap-reverse*/
+    flex-wrap:nowrap;
+
+    /* ----VALORES DA PROPRIEDADE "justify-content"----
+    flex-start, flex-end, center, space-between, space-around*/
+
+    justify-content:center;
+}
+
+.item{
+    width:100px;
+    height:100px;
+    background:#fff;
+    border:1px solid gray;
+    margin:10px;
+}
