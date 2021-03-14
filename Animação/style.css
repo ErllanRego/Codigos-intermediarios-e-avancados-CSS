@@ -9,6 +9,20 @@
     }
 }
 
+@keyframes animacao-caixa2/*Nome da animação*/{
+    from{
+        background:red;/*Começa daqui*/
+        top:0;
+        left:0;
+    }
+    to{
+        background:green;
+        border-radius:300px;
+        top:200px;
+        left:200px;/*Termina aqui*/
+    }
+}
+
 .caixa{
     margin-bottom:10px;
     width:300px;
@@ -28,4 +42,6 @@
     width:300px;
     height:300px;
     background:lawngreen;
+    position:relative;/*Com isso a movimentação da caixa se torna mais livre*/
+    animation: animacao-caixa2 5s 2s 2 alternate;
 }

@@ -1,0 +1,15 @@
+div{
+    width:300px;
+    height:300px;
+    background:blue url(img/foto\ de\ perfil.jpg)no-repeat;
+    background-size:300px;
+}
+
+div:hover/*hover é o estado quando colocamos o mouse em cima*/{
+    width:600px;
+    height:600px;
+    background:blue url(img/limao.jpg)no-repeat;
+    background-size:600px;
+    transition:width 3s, background 3s, height 3s;/*Para fazer uma transição entre as mudanças, usar a propriedade transition, logo em seguida as demais propriedades em que você quer que ocorra a transição, ao lado do tempo da animação*/
+}
+
