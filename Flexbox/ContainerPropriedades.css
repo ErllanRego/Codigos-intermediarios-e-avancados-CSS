@@ -1,0 +1,54 @@
+#conteudo{
+    background: #dcdcdc;
+    height: 600px;
+    display:flex;
+    /* ----VALORES DA PROPRIEDADE "FLEX-DIRECTION"----
+    row, row-reverse, column, column-reverse
+    
+    -->row:padrão do display flex
+   --> row-reverse:inverte a ordem das caixas filhas
+    -->column:faz com que as filhas fiquem uma embaixo da outra
+    -->column-reverse: a mesma coisa que o column porém inverte a ordem das caixas*/
+    
+    flex-direction:row;
+
+    /* ----VALORES DA PROPRIEDADE "FLEX-WRAP"----
+    nowrap, wrap, wrap-reverse
+    
+    Por padrão o flex-wrap define quebras de layout
+    -->nowrap: os itens continuam um ao lado do outro, alterando o tamanho caso o espaço seja pequeno,o nowrap faz com que não haja quebras, ele espreme pra caber
+    -->wrap: ele muda de lugar se necessário, mas não altera o tamanho das filhas pra caber na caixa pai
+    wrap-reverse:o mesmo que wrap porém inverte a ordem de exibição das filhas */
+    flex-wrap:nowrap;
+
+    /* ----VALORES DA PROPRIEDADE "justify-content"----
+    flex-start, flex-end, center, space-between, space-around
+    
+   --> flex-start: é o padrão, alinha no canto superior esquerdo
+    -->flex-end:  alinha no canto superior direito
+   --> center: centraliza no centro
+    -->space-between: centraliza porém adiciona um espaço entre os elementos, porém o primeiro e o último item ficam colados no canto.
+   --> space-around:a mesma coisa que o anterior porém não ficam itens colados nas extremidades 
+   --> space-evenly: (PESQUISAR DEPOIS)*/
+
+    justify-content:space-around;
+
+    /*----VALORES DA PROPRIEDADE "ALIGN-ITEMS:"----
+    stretch, center, flex-start, flex-end, baseline
+    
+    stretch: é o padrão, os itens vão preencher toda area até completar a sua altura
+    center: ficam centralizados, não esticam pra preencher
+    flex-start: ficam colados na parte superior
+    flex-end: colados na parte inferior
+    baseline: Se alinha de acordo com a linha do texto */
+
+    align-items:baseline;
+}
+
+.item{
+    width:200px;
+    height:200px;
+    margin:10px;
+    background:#fff;
+    border:1px solid gray;
+}

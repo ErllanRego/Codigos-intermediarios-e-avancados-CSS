@@ -1,0 +1,96 @@
+#conteudo, #conteudo2, #conteudo3{
+    background: #dcdcdc;
+    height: 600px;
+    display:flex;   
+}
+
+.item{
+    width:200px;
+    height:200px;
+    margin:10px;
+    background:#fff;
+    border:1px solid gray;
+    /*Define proporção de espaço ocupado por um item*/
+    flex-grow:0;/*Aplicando para todas as filhas*/
+}
+/*Aplicando para um item específico*/
+
+.item1{
+   flex-grow:1; /*O item passa a não ter um tamanho fixo como os outros, ocupando todo o espaço disponível*/
+}
+
+.item2{
+    flex-grow:2;/*Ocupa mais espaço do que o item com flex-grow:1; ocupa, o item2 passa a ter o dobro do tamanho*/
+}
+
+/*Assim como é possível definir a capacidade de crescimento (GROW), pode-se definir a redução(SHRINK)*/
+
+#conteudo2 .item{
+    width:200px;
+    height:100px;
+    margin:10px;
+    background:#fff;
+    border:1px solid gray;
+    flex-shrink:1;
+}
+
+#conteudo2 .item1{
+    flex-shrink:1;
+}
+
+#conteudo2 .item2{
+    flex-shrink:2;
+}
+
+#conteudo2 .item3{
+    flex-shrink:5;/*Quanto maior o valor, mais ele encolhe*/
+}
+
+#conteudo3 .item{
+    width:200px;
+    height:100px;
+    margin:10px;
+    background:#fff;
+    border:1px solid gray;
+    /*Indica o tamanho inicial do flex item antes da distribuição do espaço restante*/
+    flex-basis:100px;/*"flex-basis:auto;" é o padrão,define que o tamanho inicial dos itens é automático.
+    */
+}
+
+#conteudo3 .item2{
+    flex-grow:1;
+}
+
+#conteudo3 .item3{
+    flex-grow:2;
+}
+
+
+/*----ORDEM EM QUE OS CONTEUDOS APARECEM DENTRO DE UM FLEX ----ITEM*/
+
+
+.ordem1{
+    order:1;
+
+}
+
+.ordem2{
+    order:2;
+    
+}
+
+.ordem3{
+    order:3;
+    
+}
+
+.ordem4{
+    order:4;
+    
+}
+
+/*Exemplo para modificar apenas um item de lugar: 
+ valores negativos para mover um ultimo item e deixa-lo em primeiro, ou números positivos para mover um número em primeiro para o ultimo. Levando em conta que o padrão é 0*/
+.ordem{
+    order:-1
+}
